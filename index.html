@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>POKEDEX Prototype</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <a href="index.html" style="text-decoration: none;"><h1 style="text-align:center;">POKEDEX</h1></a>
+        <h2>An Online Pokemon Encyclopedia</h2>
+
+        <!-- searchbar -->
+        <div class="searchbar">
+            <input type="text" placeholder="Search (ID #/Name).." name="search" onkeyup="get10Pokes(false)" id="txtInput">
+        </div>
+
+        <br>
+
+        <!-- sort and filter -->
+        <div class="sort">
+            <span style="float:right">
+                Sort By:
+                <button onclick="sortStyle(0)"><a class="ID #">ID #</a></button>
+                <button onclick="sortStyle(1)"><a class="Name">Name</a></button>
+            </span>
+        </div>
+        <!-- cancelled due to some pokemons not having generations + feature is not required
+        <span class="filter">Filter by:</span>
+        <div class="dropdown">
+            <button class="dropbtn">Generation</button>
+            <div class="dropdown-content">
+                <a href="#">all</a>
+                <a href="#">i</a>
+                <a href="#">ii</a>
+                <a href="#">iii</a>
+                <a href="#">iv</a>
+                <a href="#">v</a>
+                <a href="#">vi</a>
+                <a href="#">vii</a>
+                <a href="#">viii</a>
+                <a href="#">ix</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Types</button>
+            <div class="dropdown-content">
+                <a href="#">all</a>
+                <a href="#">bug</a>
+                <a href="#">dark</a>
+                <a href="#">dragon</a>
+                <a href="#">electric</a>
+                <a href="#">fairy</a>
+                <a href="#">fighting</a>
+                <a href="#">fire</a>
+                <a href="#">flying</a>
+                <a href="#">ghost</a>
+                <a href="#">grass</a>
+                <a href="#">ground</a>
+                <a href="#">ice</a>
+                <a href="#">normal</a>
+                <a href="#">poison</a>
+                <a href="#">psychic</a>
+                <a href="#">rock</a>
+                <a href="#">steel</a>
+                <a href="#">water</a>
+            </div>
+        </div>
+        -->
+
+        <!-- content -->
+        <!-- pokemon list -->
+        <div class="pokegrid" id="listofpokes">
+        </div>
+
+        <!-- cancelled due to bad UI-->
+        <!-- pokemon details -->
+        <!--<div class="pokedetails" id="detailofpoke">
+            <p>1</p>
+            <p>Eevee</p>
+            <img src="./images/poketypes/bug.png"; height="auto" width="30px">
+            <br>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" height="auto" width="200px">
+            <p>HP: 10</p>
+            <p>Attack: 10</p>
+            <p>Defense: 10</p>
+        </div>-->
+
+        <script>
+            get10Pokes(false);
+        </script>
+        
+        <!-- browser -->
+        <br>
+        <p style="text-align:left">
+            <button onclick="left()"><img src="images/left.png" class="browser"></button>
+            <span style="float:right">
+                <button onclick="right();"><img src="images/right.png" class="browser"></button>
+            </span>
+        </p>
+
+        <h2> By: Amanda Erika M. Lim </h2>
+    </body>
+</html>
