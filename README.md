@@ -6,8 +6,9 @@ Instructions:
 1. Open index.html file to open the prototype website
 2. The website is a pokedex showing 10 pokemons at a time, showing the ID number, pokemon type and name, and the picture of the pokemon. There are buttons to sort the list. You may also search for a pokemon based on ID number or Name.
 3. The right button is to show the next 10 pokemons (according to what was searched, by name/ID as chosen). The left button is to go back to the previous 10 pokemons.
-4. You may refresh the page by clicking the header (POKEDEX).
-5. Note that there may be a lag loading the screen.
+4. To see the pokemon details, you may press the pokemon card. This should open an alert pop-up screen. Note that this is a prototype website and not the final design. An alert pop-up screen was used due to lack of UI/UX design ideas for the pokemon details.
+5. You may refresh the page by clicking the header (POKEDEX).
+6. Note that there may be a lag loading the screen.
 
 Credits to:
 1. https://pokeapi.co/ for the pokemon details
